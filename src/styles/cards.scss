@@ -107,6 +107,7 @@ $background-border: 1px;
     text-decoration: none;
     height: 40px;
     box-sizing: border-box;
+    transition: transform 0.3s;
 
     &:hover {
       background-color: $background-color;
