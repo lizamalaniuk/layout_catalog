@@ -5,19 +5,21 @@ $secondary-color: #616070;
 $font-main: Roboto, sans-serif;
 $card-border: 1px solid #00acdc;
 $card-radius: 5px;
-$primary-color: #00acdc;
+$title-color: #0e0e2c;
+$title-card-hover-color: #34568b;
+$buttom-color: #00acdc;
 
 .card {
   width: 200px;
   padding: 16px;
   padding-top: 32px;
-  background: #fff;
+  background: $background-color;
   border-radius: $card-radius;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $background-border;
 
   transition: transform 0.3s;
 
@@ -38,11 +40,11 @@ $primary-color: #00acdc;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-    color: #0e0e2c;
+    color: $title-color;
     margin-bottom: 4px;
 
     &:hover {
-      color: #34568b;
+      color: $title-card-hover-color;
     }
   }
 
@@ -50,7 +52,7 @@ $primary-color: #00acdc;
     font-size: 10px;
     font-weight: 400;
     line-height: 14px;
-    color: #616070;
+    color: $secondary-color;
     margin-bottom: 18px;
     align-self: start;
   }
@@ -65,7 +67,7 @@ $primary-color: #00acdc;
       font-weight: 400;
       font-size: 10px;
       line-height: 14px;
-      color: #0e0e2c;
+      color: $title-color;
     }
   }
 
@@ -77,7 +79,7 @@ $primary-color: #00acdc;
 
     .card__label {
       font-weight: 400;
-      color: #616070;
+      color: $secondary-color;
       font-size: 12px;
       line-height: 18px;
       letter-spacing: 0;
@@ -86,13 +88,13 @@ $primary-color: #00acdc;
     .card__price {
       font-weight: 700;
       font-size: 16px;
-      color: #060b35;
+      color: $primary-color;
       line-height: 18px;
     }
   }
 
   &__buy {
-    background-color: $primary-color;
+    background-color: $buttom-color;
     color: white;
     text-align: center;
     padding: 12px 0;
@@ -105,7 +107,7 @@ $primary-color: #00acdc;
     box-sizing: border-box;
 
     &:hover {
-      background-color: #fff;
+      background-color: $background-color;
       color: $primary-color;
       border: $card-border;
       padding: 11px 0;
