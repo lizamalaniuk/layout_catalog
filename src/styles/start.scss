@@ -1,15 +1,21 @@
+$star-width: 16px;
+$star-height: 12px;
+$star-margin-right: 4px;
+$star-margin-bottom: 2px;
+
+
 .stars {
   display: flex;
   align-items: center;
 
   &__icon {
-    width: 16px;
-    height: 12px;
+    width: $star-width;
+    height: $star-height;
     background-image: url('../images/star.svg');
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 4px;
-    margin-bottom: 2px;
+    margin-right: $star-margin-right;
+    margin-bottom: $star-margin-bottom;
   }
 
   &--5 .stars__icon:nth-child(-n + 4) {
